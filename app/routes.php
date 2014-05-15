@@ -13,7 +13,7 @@
 
 Route::get('/', 'PostsController@index');
 Route::get('/posts', 'PostsController@index');
-Route::get('/catagory/{category}', 'PostsController@viewByCategory');
+Route::get('/category/{category}', 'PostsController@viewByCategory');
 Route::get('/date/{year}/{month}', 'PostsController@viewByDate');
 Route::get('posts/{id}', 'PostsController@show');
 Route::post('posts/{id}', 'CommentsController@store');
